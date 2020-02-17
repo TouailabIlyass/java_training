@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<ScrollPane fx:id="scroll2" hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" pannable="true" prefHeight="400.0" prefWidth="774.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appstage.FXMLDocumentIncController">
+   <content>
+      <BorderPane fx:id="borderp" prefHeight="1000.0" prefWidth="5500.0">
+         <right>
+            
+         </right>
+         <center>
+            <JFXTreeTableView fx:id="listeview" showRoot="false" BorderPane.alignment="CENTER">
+               <columnResizePolicy>
+                 
+               </columnResizePolicy>
+               
+            </JFXTreeTableView>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

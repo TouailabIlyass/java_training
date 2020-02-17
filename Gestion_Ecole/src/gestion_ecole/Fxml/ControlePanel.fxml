@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_ecole.Java.Gui.ControlePanelController">
+   <children>
+      <JFXTabPane fx:id="Tabpane" prefHeight="550.0" prefWidth="800.0" tabMaxHeight="60.0" tabMaxWidth="160.0" tabMinHeight="60.0" tabMinWidth="70.0">
+         <tabs>
+            <Tab fx:id="TabUsers" text="USERS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #E9E9E9;">
+                     <children>
+                        <HBox fx:id="MainU" alignment="CENTER" layoutX="134.0" layoutY="113.0" prefHeight="265.0" prefWidth="532.0" spacing="40.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                           <children>
+                              <VBox alignment="CENTER" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Usr_Show" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font name="Ani" size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Show">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="242.0" layoutY="10.0" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Usr_Add" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Add">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="286.0" layoutY="10.0" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Usr_Remove" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Remove">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="242.0" layoutY="10.0" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Usr_Update" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Update">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        
+                        
+                        <StackPane fx:id="ResultWU" layoutY="-500.0" prefHeight="490.0" prefWidth="800.0" style="-fx-border-width: 14; -fx-border-color: #E9E9E9;">
+                           <children>
+                              <AnchorPane prefHeight="462.0" prefWidth="772.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="462.0" prefWidth="772.0" spacing="10.0">
+                                       <children>
+                                          <AnchorPane fx:id="ContentU" minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="772.0">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </AnchorPane>
+                                          <JFXButton fx:id="ExitU" buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #00BCD4; -fx-background-radius: 4;" text="EXIT" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" right="10.0" />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="TabStudents" text="STUDENTS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #E9E9E9;">
+                     <children>
+                        <HBox fx:id="Main" alignment="CENTER" layoutX="134.0" layoutY="113.0" prefHeight="265.0" prefWidth="532.0" spacing="40.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                           <children>
+                              <VBox alignment="CENTER" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Std_Show" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Show">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="242.0" layoutY="10.0" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Std_Add" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Add">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="286.0" layoutY="10.0" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Std_Remove" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Remove">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="242.0" layoutY="10.0" spacing="3.0">
+                                 <children>
+                                    <JFXButton fx:id="Std_Update" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Update">
+                                       <font>
+                                          <Font name="Ani" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox fx:id="Show" layoutX="804.0" layoutY="113.0" prefWidth="532.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="265.0" prefWidth="532.0" spacing="40.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="242.0" layoutY="10.0" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_Rslt" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="110.0" text="Result Of Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_stds" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Students">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="286.0" layoutY="10.0" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_Absense" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="111.0" text="Abcense Of Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXButton fx:id="Cancel_Show" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="42.0" prefWidth="117.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 4;" text="Cancel" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="Add" layoutX="804.0" layoutY="113.0" prefWidth="532.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="265.0" prefWidth="532.0" spacing="40.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="242.0" layoutY="10.0" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_RsltA" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="110.0" text="Result Of Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_std" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="286.0" layoutY="10.0" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_AbsenseA" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="111.0" text="Abcense Of Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXButton fx:id="Cancel_Add" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="42.0" prefWidth="117.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 4;" text="Cancel" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="Update" layoutX="-536.0" layoutY="113.0" prefWidth="532.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="265.0" prefWidth="532.0" spacing="40.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="242.0" layoutY="10.0" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_RsltU" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="110.0" text="Result Of Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_stdU" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="57.0" text="Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="286.0" layoutY="10.0" spacing="3.0">
+                                       <children>
+                                          <JFXButton fx:id="Std_AbsenseU" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 50%;" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label alignment="CENTER" prefHeight="38.0" prefWidth="111.0" text="Abcense Of Student">
+                                             <font>
+                                                <Font name="Ani" size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXButton fx:id="Cancel_Update" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="42.0" prefWidth="117.0" ripplerFill="#ffffffb4" style="-fx-background-color: #00BCD4; -fx-background-radius: 4;" text="Cancel" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <StackPane fx:id="ResultW" layoutY="-500.0" prefHeight="490.0" prefWidth="800.0" style="-fx-border-width: 14; -fx-border-color: #E9E9E9;">
+                           <children>
+                              <AnchorPane prefHeight="462.0" prefWidth="772.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="462.0" prefWidth="772.0" spacing="10.0">
+                                       <children>
+                                          <AnchorPane fx:id="Content" minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="772.0">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </AnchorPane>
+                                          <JFXButton fx:id="Exit" buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #00BCD4; -fx-background-radius: 4;" text="EXIT" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" right="10.0" />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

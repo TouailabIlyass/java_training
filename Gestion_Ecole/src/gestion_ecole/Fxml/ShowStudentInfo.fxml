@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_ecole.Java.Gui.ShowStudentInfoController">
+   <children>
+      <HBox fx:id="Main" prefHeight="402.0" prefWidth="772.0" spacing="100.0">
+         <children>
+            <VBox prefHeight="402.0" prefWidth="214.0" spacing="40.0">
+               <children>
+                  <JFXTextField fx:id="FirstnameF" focusColor="#00bcd4" labelFloat="true" prefHeight="30.0" prefWidth="194.0" promptText="Firstname" unFocusColor="#737373" />
+                  <JFXComboBox fx:id="SelectD" focusColor="#00bcd4" prefHeight="30.0" prefWidth="194.0" unFocusColor="#737373" />
+                  <HBox prefHeight="18.0" prefWidth="186.0">
+                     <children>
+                        <JFXRadioButton fx:id="FY" prefHeight="17.0" prefWidth="87.0" text="FirstYear">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Year" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="SY" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="87.0" text="SecendYear" toggleGroup="$Year" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="Show" buttonType="RAISED" prefHeight="40.0" prefWidth="194.0" ripplerFill="#ffffffb2" style="-fx-background-color: #00bcd4;" text="Show" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="80.0" />
+               </padding>
+            </VBox>
+            <JFXListView fx:id="ListView" prefHeight="351.0" prefWidth="341.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </HBox.margin>
+            </JFXListView>
+         </children>
+      </HBox>
+      <HBox fx:id="Info" layoutX="772.0" prefHeight="402.0" prefWidth="772.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="402.0" prefWidth="230.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="Picture" fitHeight="192.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="402.0" prefWidth="180.0" spacing="15.0">
+               <children>
+                  <Label text="Firstname" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="339.0" layoutY="203.0" text="Lastname" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="332.0" layoutY="219.0" text="Brith Place" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="325.0" layoutY="236.0" text="Brith Date" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="329.0" layoutY="254.0" text="CIN" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="329.0" layoutY="271.0" text="CNE" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="329.0" layoutY="289.0" text="Phone" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="351.0" layoutY="306.0" text="Email" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="357.0" layoutY="324.0" text="Date of Registration" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="402.0" prefWidth="250.0" spacing="15.0">
+               <children>
+                  <Label fx:id="Firstname" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lastname" layoutX="10.0" layoutY="201.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Brith_Place" layoutX="10.0" layoutY="219.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Brith_Date" layoutX="10.0" layoutY="236.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CIN" layoutX="10.0" layoutY="254.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CNE" layoutX="10.0" layoutY="271.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Phone" layoutX="10.0" layoutY="289.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Email" layoutX="10.0" layoutY="306.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DoR" layoutX="10.0" layoutY="324.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_RIGHT" prefHeight="402.0" prefWidth="164.0">
+               <children>
+                  <JFXButton fx:id="Back" buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" ripplerFill="#ffffffb2" style="-fx-background-color: #00bcd4;" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXButton>
+               </children>
+               <padding>
+                  <Insets right="9.9" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

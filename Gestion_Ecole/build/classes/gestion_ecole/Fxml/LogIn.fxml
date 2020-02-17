@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_ecole.Java.Gui.LogInController">
+   <children>
+      <StackPane fx:id="stackpane" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #E9E9E9;">
+         <children>
+            <VBox prefHeight="550.0" prefWidth="800.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="800.0" style="-fx-background-color: #00BCD4;" />
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="350.0" prefWidth="800.0" style="-fx-background-color: #E9E9E9;" />
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+               <children>
+                  <AnchorPane fx:id="Content" layoutX="189.0" layoutY="14.0">
+                     <children>
+                        <VBox prefHeight="109.0" prefWidth="416.0">
+                           <children>
+                              <Label prefHeight="62.0" prefWidth="420.0" style="-fx-alignment: Center;" text="Gestion Ecole" textFill="#51ff00f2">
+                                 <font>
+                                    <Font name="Ani" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="47.0" prefWidth="421.0" style="-fx-alignment: Center;" text="Log In" textFill="#ffffffcd">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <AnchorPane fx:id="ContentField" layoutY="109.0" prefHeight="366.0" prefWidth="416.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                           <children>
+                              <JFXTextField fx:id="Username" alignment="CENTER" focusColor="#00bcd4" labelFloat="true" layoutX="70.0" layoutY="137.0" prefHeight="33.0" prefWidth="270.0" promptText="Username" unFocusColor="#737373">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXPasswordField fx:id="Password" alignment="CENTER" focusColor="#00bcd4" labelFloat="true" layoutX="70.0" layoutY="220.0" prefHeight="33.0" prefWidth="270.0" promptText="Password" unFocusColor="#737373">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <JFXButton fx:id="LogIn" buttonType="RAISED" layoutX="135.0" layoutY="301.0" prefHeight="38.0" prefWidth="141.0" ripplerFill="#ffffffd3" style="-fx-background-color: #00BCD4; -fx-background-radius: 4px; -fx-cursor: hand;" text="Log In" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="155.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/User_Group_Man_Woman.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="containerDrawer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseReleased="#Close" prefHeight="600.0" prefWidth="307.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfe2.ContainerDrawerControlle">
+   <children>
+      <Accordion fx:id="Accor" accessibleText="Accordion1" layoutY="10.0">
+        <panes>
+          <TitledPane accessibleText="Optique" animated="false" text="Optique">
+            <content>
+              <AnchorPane accessibleText="pananchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="266.0">
+                     <children>
+                        <JFXRadioButton fx:id="convergente" accessibleText="convergente" layoutX="35.0" layoutY="14.0" onAction="#ShoseOp" prefHeight="26.0" prefWidth="139.0" selected="true" text="Convergente">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Optique" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="divergente" accessibleText="divergente" layoutX="37.0" layoutY="52.0" onAction="#ShoseOp" prefHeight="26.0" prefWidth="133.0" text="Divergente" toggleGroup="$Optique" />
+                        <JFXRadioButton fx:id="MiroireCv" accessibleText="divergente" layoutX="38.0" layoutY="90.0" onAction="#ShoseOp" prefHeight="26.0" prefWidth="133.0" text="Miroire concave" toggleGroup="$Optique" />
+                        <JFXRadioButton fx:id="MiroireCx" accessibleText="divergente" layoutX="39.0" layoutY="128.0" onAction="#ShoseOp" prefHeight="26.0" prefWidth="133.0" text="Miroire convexe" toggleGroup="$Optique" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Size">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXSlider fx:id="sldWidth" blockIncrement="5.0" layoutX="31.0" layoutY="62.0" max="2000.0" min="800.0" onDragDetected="#Size" prefHeight="16.0" prefWidth="186.0" value="800.0" />
+                        <Label layoutX="31.0" layoutY="14.0" prefHeight="26.0" prefWidth="151.0" text="Width :" />
+                        <Label layoutX="31.0" layoutY="90.0" prefHeight="26.0" prefWidth="151.0" text="Height :" />
+                        <JFXSlider fx:id="sldHeight" blockIncrement="5.0" layoutX="31.0" layoutY="141.0" max="2000.0" min="600.0" onDragDetected="#Size" prefHeight="16.0" prefWidth="186.0" value="600.0" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+         
+        </panes>
+      </Accordion>
+   </children>
+</Pane>

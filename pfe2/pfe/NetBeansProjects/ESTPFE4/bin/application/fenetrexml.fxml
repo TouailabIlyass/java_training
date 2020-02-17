@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<GridPane fx:id="B" maxHeight="2000.0" maxWidth="2000.0" minHeight="600.0" minWidth="600.0" onMouseMoved="#fen" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Control">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" maxWidth="1000.0" minWidth="46.0" percentWidth="30.0" prefWidth="400.0" />
+    <ColumnConstraints hgrow="NEVER" maxWidth="2000.0" minWidth="10.0" percentWidth="90.0" prefWidth="783.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane fx:id="pan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #f00; -fx-border-width: 5px;" GridPane.columnIndex="1">
+         <children>
+           <Line fx:id="R" endX="261.0" endY="300.0" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" startX="261.0" startY="248.0" strokeWidth="5.0" />
+             <Arc fx:id="arc1" fill="#030303" layoutX="299.0" layoutY="80.0" length="40.0" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radiusX="25.0" radiusY="25.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Line fx:id="axe" endX="600.0" endY="300.0" startX="5.0" startY="300.0" stroke="#3d0dae" strokeWidth="3.0" />
+            <Line fx:id="op" endX="300.0" endY="506.0" startX="300.0" startY="94.0" />
+             <Arc fx:id="arc" fill="#eb0808" layoutX="260.0" layoutY="226.0" length="40.0" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radiusX="25.0" radiusY="25.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="arc2" fill="#030303" layoutX="301.0" layoutY="515.0" length="40.0" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radiusX="25.0" radiusY="25.0" startAngle="74.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Circle fx:id="f1" fill="#fffe00" layoutX="285.0" layoutY="300.0" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="f2" fill="#fffe00" layoutX="330.0" layoutY="300.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="R2" layoutX="386.0" layoutY="300.0" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" startY="80.0" stroke="RED" strokeWidth="5.0" />
+            <Arc fx:id="arc3" layoutX="385.0" layoutY="368.0" length="40.0" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radiusX="25.0" radiusY="25.0" rotate="180.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+         </children>
+      </Pane>
+      <Pane fx:id="pan2" maxWidth="400.0" minWidth="200.0" prefWidth="200.0">
+         <children>
+            <VBox layoutX="-5.0" layoutY="-1.0" prefHeight="608.0" prefWidth="207.0">
+               <children>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" minWidth="38.0" prefHeight="206.0" prefWidth="148.0" text="Optique">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="104.0">
+                                 <children>
+                                    <RadioButton fx:id="radioOp1" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#ChangeRadio" prefHeight="17.0" prefWidth="154.0" selected="true" text="Optique Convergente">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="Optique" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="radioOp2" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#ChangeRadio" prefHeight="17.0" prefWidth="148.0" text="Optique Divergente" toggleGroup="$Optique" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Color">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ColorPicker fx:id="color" layoutX="20.0" layoutY="141.0" onAction="#ChangeColor" />
+                                    <CheckBox fx:id="caxe" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="112.0" text="axe" />
+                                    <CheckBox layoutX="14.0" layoutY="44.0" mnemonicParsing="false" text="optique" />
+                                    <CheckBox layoutX="14.0" layoutY="82.0" mnemonicParsing="false" text="focal" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="untitled 3">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</GridPane>

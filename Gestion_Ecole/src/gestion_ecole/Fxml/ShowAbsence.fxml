@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableColumn?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_ecole.Java.Gui.ShowAbsenceController">
+   <children>
+      <HBox fx:id="First" prefHeight="402.0" prefWidth="772.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="402.0" prefWidth="214.0" spacing="40.0">
+               <children>
+                  <JFXTextField fx:id="FirstnameF" focusColor="#00bcd4" labelFloat="true" prefHeight="30.0" prefWidth="194.0" promptText="Firstname" unFocusColor="#737373" />
+                  <JFXComboBox fx:id="SelectD" focusColor="#00bcd4" prefHeight="30.0" prefWidth="194.0" unFocusColor="#737373" />
+                  <HBox prefHeight="18.0" prefWidth="186.0">
+                     <children>
+                        <JFXRadioButton fx:id="FY" prefHeight="17.0" prefWidth="87.0" styleClass="custom-jfx-radio-button-blue" text="FirstYear">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Year" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="SY" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="87.0" styleClass="custom-jfx-radio-button-blue" text="SecendYear" toggleGroup="$Year" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="Show" buttonType="RAISED" prefHeight="40.0" prefWidth="194.0" ripplerFill="#ffffffb2" style="-fx-background-color: #00bcd4;" text="Show" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="80.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="402.0" prefWidth="334.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <children>
+                  <JFXListView fx:id="ListView" prefHeight="355.0" prefWidth="250.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXListView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox fx:id="Last" alignment="BOTTOM_RIGHT" layoutX="776.0" prefHeight="402.0" prefWidth="772.0" spacing="22.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="340.0" prefWidth="763.0">
+               <children>
+                  <JFXTreeTableView fx:id="treeTableView" prefHeight="340.0">
+                     <columns>
+                        <JFXTreeTableColumn fx:id="MDLC" minWidth="122.0" prefWidth="148.0" resizable="false" text="MODULE" />
+                        <JFXTreeTableColumn fx:id="SBJCTC" minWidth="118.0" prefWidth="134.0" resizable="false" text="SUBJECT" />
+                        <JFXTreeTableColumn fx:id="DATEC" minWidth="104.0" prefWidth="132.0" resizable="false" text="DATE" />
+                        <JFXTreeTableColumn fx:id="TIMEC" minWidth="118.0" prefWidth="118.0" resizable="false" text="TIME" />
+                        <JFXTreeTableColumn fx:id="NBHC" minWidth="40.0" prefWidth="88.0" resizable="false" text="NH" />
+                        <JFXTreeTableColumn fx:id="JSC" minWidth="36.0" prefWidth="90.0" resizable="false" text="JS" />
+                     </columns>
+                  </JFXTreeTableView>
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </HBox>
+            <JFXButton fx:id="Back" buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #00bcd4; -fx-background-radius: 4px;" text="BACK" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets right="9.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

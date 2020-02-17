@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="158.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appstage.ControleOpption">
+   <children>
+      <JFXButton fx:id="btnAjouter" layoutX="69.0" layoutY="79.0" onAction="#Add" prefHeight="36.0" prefWidth="219.0" style="-fx-background-color: #00f;" text="Ajouter" textFill="WHITE" />
+      <JFXTextField fx:id="textfield" focusColor="#b20000" layoutX="61.0" layoutY="14.0" maxWidth="234.0" minWidth="214.0" prefHeight="46.0" prefWidth="234.0" unFocusColor="#5e5d5d" />
+   </children>
+</Pane>

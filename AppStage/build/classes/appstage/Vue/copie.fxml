@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" prefHeight="418.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appstage.FXMLAjouterController">
+   <content>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1048.0" prefWidth="610.0">
+         <children>
+            <HBox layoutX="108.0" layoutY="31.0" prefHeight="32.0" prefWidth="404.0">
+               <children>
+                  <JFXTextField fx:id="NumDossier" focusColor="#f20000" maxWidth="198.0" minWidth="198.0" prefHeight="32.0" prefWidth="198.0" promptText="Numero" unFocusColor="#f20000" />
+                  <JFXTextField fx:id="TitreDossier" focusColor="#f20000" layoutX="10.0" layoutY="10.0" maxWidth="198.0" minWidth="198.0" prefHeight="32.0" prefWidth="198.0" promptText="Titre" unFocusColor="#f20000" />
+               </children>
+            </HBox>
+            <HBox layoutY="105.0" prefHeight="32.0" prefWidth="575.0">
+               <children>
+                  <JFXTextField fx:id="Acheteur" maxWidth="198.0" minWidth="198.0" prefHeight="32.0" prefWidth="198.0" promptText="Acheteur">
+                     <HBox.margin>
+                        <Insets left="77.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="Entite" maxWidth="206.0" minWidth="206.0" prefHeight="32.0" prefWidth="206.0" promptText="Entite">
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <Label layoutX="31.0" layoutY="79.0" prefHeight="26.0" prefWidth="125.0" text="Achat" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="137.0" prefHeight="26.0" prefWidth="125.0" text="Besion" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <HBox fillHeight="false" layoutX="1.0" layoutY="170.0" prefHeight="32.0" prefWidth="594.0">
+               <children>
+                  <JFXTextField fx:id="BesionType" maxWidth="181.0" minWidth="181.0" prefColumnCount="20" prefHeight="32.0" prefWidth="181.0" promptText="TYPE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="NDA" prefColumnCount="20" promptText="N DA">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="DateAffec" prefHeight="32.0" prefWidth="182.0" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="1.0" layoutY="220.0" prefHeight="32.0" prefWidth="582.0">
+               <children>
+                  <JFXTextField fx:id="SCE" prefColumnCount="20" promptText="SCE DEMANDEUR">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="Estimation" prefColumnCount="20" promptText="ESTIMATION">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="ChefProjet" prefColumnCount="20" promptText="CHEF DE PROJET">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="1.0" layoutY="278.0" prefHeight="32.0" prefWidth="577.0">
+               <children>
+                  <JFXTextField fx:id="Objet" maxWidth="556.0" minWidth="556.0" prefColumnCount="20" prefHeight="32.0" prefWidth="556.0" promptText="OBJET">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <Label layoutX="22.0" layoutY="319.0" prefHeight="26.0" prefWidth="125.0" text="RFI" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <HBox fillHeight="false" layoutX="5.0" layoutY="355.0" prefHeight="32.0" prefWidth="575.0">
+               <children>
+                  <JFXTextField fx:id="NRFI" maxWidth="181.0" minWidth="151.0" prefColumnCount="20" prefHeight="32.0" prefWidth="164.0" promptText="Numero">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="DateRFI" promptText="Date" />
+                  <JFXDatePicker fx:id="RFIEcheance" promptText="Echeance" />
+               </children>
+            </HBox>
+            <Label layoutX="22.0" layoutY="395.0" prefHeight="26.0" prefWidth="125.0" text="CGAO" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <HBox fillHeight="false" layoutX="5.0" layoutY="429.0" prefHeight="32.0" prefWidth="588.0">
+               <children>
+                  <JFXTextField fx:id="CGAONPV" prefColumnCount="20" promptText="PV Numero">
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="DateCGAO" promptText="Date" />
+               </children>
+            </HBox>
+            <Label layoutX="22.0" layoutY="468.0" prefHeight="26.0" prefWidth="125.0" text="AO" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <HBox fillHeight="false" layoutX="1.0" layoutY="494.0" prefHeight="32.0" prefWidth="587.0">
+               <children>
+                  <JFXTextField fx:id="NAO" maxWidth="166.0" minWidth="114.0" prefColumnCount="20" prefHeight="32.0" prefWidth="114.0" promptText="N AO">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="DateAO" prefHeight="32.0" prefWidth="157.0" promptText="Date AO" />
+                  <JFXDatePicker fx:id="AOEcheance" promptText="Echeance" />
+                  <JFXDatePicker fx:id="AORelance" prefHeight="32.0" prefWidth="177.0" promptText="Relance">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </JFXDatePicker>
+               </children>
+            </HBox>
+            <Label layoutX="22.0" layoutY="533.0" prefHeight="26.0" prefWidth="125.0" text="COF" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <HBox fillHeight="false" layoutY="568.0" prefHeight="29.0" prefWidth="588.0">
+               <children>
+                  <JFXDatePicker fx:id="COFDateTech" promptText="Date Tech" />
+                  <JFXDatePicker fx:id="COFDateAvis" promptText="Date Avis Tech" />
+                  <JFXDatePicker fx:id="COFDateCom" promptText="Date com" />
+               </children>
+            </HBox>
+            <Label layoutX="22.0" layoutY="609.0" prefHeight="26.0" prefWidth="125.0" text="AE" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <HBox fillHeight="false" layoutX="5.0" layoutY="642.0" prefHeight="29.0" prefWidth="591.0">
+               <children>
+                  <JFXTextField fx:id="NAE" promptText="N AE" />
+                  <JFXTextField fx:id="AENature" layoutX="10.0" layoutY="10.0" maxWidth="199.0" minWidth="120.0" prefHeight="32.0" prefWidth="120.0" promptText="Nature" />
+                  <JFXTextField fx:id="AEAnnee" layoutX="181.0" layoutY="10.0" maxWidth="212.0" minWidth="101.0" prefHeight="32.0" prefWidth="101.0" promptText="Annee" />
+                  <JFXTextField fx:id="AEMontant" layoutX="301.0" layoutY="10.0" maxWidth="212.0" minWidth="101.0" prefHeight="32.0" prefWidth="185.0" promptText="Montant" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="5.0" layoutY="682.0" prefHeight="32.0" prefWidth="571.0">
+               <children>
+                  <JFXTextField fx:id="AEMaintEnagage" layoutX="10.0" layoutY="10.0" maxWidth="199.0" minWidth="199.0" prefHeight="32.0" prefWidth="199.0" promptText="Montant Engage sur AE" />
+                  <JFXDatePicker fx:id="AEDate" promptText="Date AE" />
+                  <JFXDatePicker fx:id="AEDateArrivee" promptText="Date Arrivee" />
+               </children>
+            </HBox>
+            <Label layoutX="22.0" layoutY="722.0" prefHeight="26.0" prefWidth="125.0" text="CAD" textFill="#4404f2" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <HBox fillHeight="false" layoutX="5.0" layoutY="756.0" prefHeight="29.0" prefWidth="591.0">
+               <children>
+                  <JFXTextField fx:id="CADPVNum" promptText="PV Numero" />
+                  <JFXDatePicker fx:id="CADDate" prefHeight="32.0" prefWidth="188.0" promptText="Date CAD" />
+                  <JFXTextField fx:id="CADSignataire" layoutX="301.0" layoutY="10.0" maxWidth="212.0" minWidth="101.0" prefHeight="32.0" prefWidth="185.0" promptText="Signataire" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="5.0" layoutY="803.0" prefHeight="29.0" prefWidth="591.0">
+               <children>
+                  <JFXTextField fx:id="CADAdjucataire" promptText="Adjudicataire" />
+                  <JFXTextField fx:id="CADOrigine" maxWidth="191.0" minWidth="191.0" prefHeight="32.0" prefWidth="191.0" promptText="Origine" />
+                  <JFXTextField fx:id="CDENum" layoutX="301.0" layoutY="10.0" maxWidth="212.0" minWidth="101.0" prefHeight="32.0" prefWidth="179.0" promptText="N CDE" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="5.0" layoutY="851.0" prefHeight="29.0" prefWidth="591.0">
+               <children>
+                  <JFXDatePicker fx:id="CDEDate" promptText="Date CDE" />
+                  <JFXTextField fx:id="CDESignataire" maxWidth="191.0" minWidth="153.0" prefHeight="32.0" prefWidth="153.0" promptText="Signataire CDE" />
+                  <JFXTextField fx:id="CDEDelai" layoutX="301.0" layoutY="10.0" maxWidth="212.0" minWidth="101.0" prefHeight="32.0" prefWidth="185.0" promptText="Delai" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="-1.0" layoutY="901.0" prefHeight="29.0" prefWidth="591.0">
+               <children>
+                  <JFXTextField fx:id="CADMontant" maxWidth="178.0" minWidth="178.0" prefHeight="32.0" prefWidth="178.0" promptText="Montant/MAD/TTC" />
+                  <JFXTextField fx:id="CADSituation" maxWidth="191.0" minWidth="191.0" prefHeight="32.0" prefWidth="191.0" promptText="Situation" />
+                  <JFXTextField fx:id="CADObservation" layoutX="301.0" layoutY="10.0" maxWidth="212.0" minWidth="101.0" prefHeight="32.0" prefWidth="179.0" promptText="Observation" />
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnValide" buttonType="RAISED" layoutX="387.0" layoutY="974.0" onAction="#Valide" prefHeight="41.0" prefWidth="91.0" ripplerFill="WHITE" style="-fx-background-color: #03c;" text="Valide" textFill="WHITE" />
+            <JFXButton fx:id="btnReset" buttonType="RAISED" layoutX="102.0" layoutY="974.0" onAction="#Reset" prefHeight="41.0" prefWidth="91.0" ripplerFill="WHITE" style="-fx-background-color: #0c0;" text="Reset" textFill="WHITE" />
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="30.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="DEPARTMENT" prefHeight="30.0" prefWidth="96.0" text="DEPARTMENT">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="YEAR" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="44.0" text="YEAR">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="MODULE" layoutX="103.0" layoutY="10.0" prefHeight="30.0" prefWidth="66.0" text="MODULE">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="SUBJECT" layoutX="150.0" layoutY="10.0" prefHeight="30.0" prefWidth="65.0" text="SUBJECT">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="AS" layoutX="217.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="AS">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="RS" layoutX="282.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="RS">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="US" layoutX="317.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="US">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="AR" layoutX="352.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="AR">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="RR" layoutX="387.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="RR">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="UR" layoutX="422.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="UR">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="AA" layoutX="457.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="AA">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="RA" layoutX="492.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="RA">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="UA" layoutX="527.0" layoutY="10.0" prefHeight="30.0" prefWidth="32.0" text="UA">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>

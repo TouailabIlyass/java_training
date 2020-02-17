@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2017, 10:32:43 AM
+    Author     : kingdragon
+*/
+
+.hv:hover{
+    
+    -fx-background-color: #9ACD32;
+}
+
+.erreur
+{
+    -fx-border-color: #f00;
+    -fx-border-width: 3px;
+}
+
+.hvbtn:hover{
+    
+    -fx-background-color: #fff;
+}

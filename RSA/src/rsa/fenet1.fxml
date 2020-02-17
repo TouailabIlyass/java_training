@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="683.0" style="-fx-background-color: DCF8C6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rsa.Fenet1Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="176.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fes.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="180.0" layoutY="29.0" prefHeight="34.0" prefWidth="337.0" text="Project Cryptology" textFill="#853314">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="78.0" prefHeight="47.0" prefWidth="228.0" text="RSA" textAlignment="CENTER" textFill="#9e1807">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="471.0" prefHeight="34.0" prefWidth="189.0" text="Touailab ilyase">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="505.0" prefHeight="34.0" prefWidth="189.0" text="Moussif tawfiq">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="edt1" layoutX="180.0" layoutY="138.0" prefHeight="34.0" prefWidth="220.0" />
+      <TextField fx:id="edt2" layoutX="102.0" layoutY="247.0" prefHeight="34.0" prefWidth="376.0" />
+      <ComboBox fx:id="combo" layoutX="128.0" layoutY="187.0" prefWidth="150.0" promptText="operation" />
+      <Button fx:id="btn" layoutX="338.0" layoutY="183.0" mnemonicParsing="false" onAction="#crypter" prefHeight="34.0" prefWidth="106.0" text="Calculer" />
+      <Label layoutX="483.0" layoutY="505.0" prefHeight="34.0" prefWidth="189.0" text="Prof : L.OUGHDIR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pk" layoutX="203.0" layoutY="286.0" prefHeight="34.0" prefWidth="74.0" />
+      <Label layoutX="102.0" layoutY="286.0" prefHeight="26.0" prefWidth="97.0" text="public key">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="vk" layoutX="414.0" layoutY="286.0" prefHeight="34.0" prefWidth="74.0" />
+      <Label layoutX="313.0" layoutY="286.0" prefHeight="26.0" prefWidth="97.0" text="private key">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

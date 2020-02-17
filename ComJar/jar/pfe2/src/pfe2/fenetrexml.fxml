@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="gridPane" maxHeight="2000.0" maxWidth="2000.0" minHeight="600.0" minWidth="869.0" prefHeight="600.0" prefWidth="869.0" styleClass="Test" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfe2.Control">
+  <columnConstraints>
+    <ColumnConstraints maxWidth="2000.0" minWidth="10.0" percentWidth="100.0" prefWidth="800.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane fx:id="pan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" styleClass="Test" stylesheets="@application.css">
+         <children>
+            
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="400.0" layoutX="1.0" prefHeight="485.0" prefWidth="403.0">
+               </JFXDrawer>
+           <Line fx:id="R" accessibleText="R" endX="261.0" endY="295.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" onMouseExited="#Label" startX="261.0" startY="248.0" strokeWidth="5.0" />
+            <Line fx:id="axe" accessibleText="axe" endX="790.0" endY="300.0" onMouseClicked="#ClickBtn" startX="10.0" startY="300.0" stroke="#3d0dae" strokeWidth="3.0" />
+            <Line fx:id="op" accessibleText="op" endX="390.0" endY="506.0" onMouseClicked="#ClickBtn" startX="390.0" startY="94.0" strokeWidth="3.0" />
+            <Arc fx:id="arc2" accessibleText="arc2" fill="#030303" layoutX="390.0" layoutY="515.0" length="40.0" radiusX="25.0" radiusY="25.0" startAngle="71.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Circle fx:id="f2" accessibleText="f2" fill="#fffe00" layoutX="410.0" layoutY="299.0" onMouseClicked="#ClickBtn" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="f1" accessibleText="f1" fill="#fffe00" layoutX="370.0" layoutY="300.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" onMouseExited="#Label" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="R2" accessibleText="R2" endX="450.0" endY="375.0" startX="450.0" startY="300.0" stroke="RED" strokeWidth="5.0" visible="false" />
+            <Arc fx:id="arc3" accessibleText="arc3" layoutX="449.0" layoutY="368.0" length="40.0" radiusX="25.0" radiusY="25.0" rotate="180.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" visible="false" />
+             <Arc fx:id="arc1" accessibleText="arc1" fill="#030303" layoutX="389.0" layoutY="80.0" length="40.0" radiusX="25.0" radiusY="25.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+             <Arc fx:id="arc" accessibleText="arc" fill="#eb0808" layoutX="260.0" layoutY="226.0" length="40.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radiusX="25.0" radiusY="25.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <JFXHamburger fx:id="hamburger" layoutX="756.0" layoutY="14.0" onMouseClicked="#ClickHamburger" />
+            <Line fx:id="l" accessibleText="l" onMouseClicked="#ClickBtn" strokeWidth="2.0" />
+            <Line fx:id="l3" accessibleText="l3" onMouseClicked="#ClickBtn" strokeWidth="2.0" />
+            <Line fx:id="l4" accessibleText="l4" onMouseClicked="#ClickBtn" stroke="RED" strokeWidth="2.0" />
+            <Line fx:id="l5" accessibleText="l5" onMouseClicked="#ClickBtn" stroke="#c97d7d" strokeWidth="2.0" />
+            <Line fx:id="l7" accessibleText="l7" onMouseClicked="#ClickBtn" strokeWidth="2.0" />
+            <Line fx:id="l8" accessibleText="l8" onMouseClicked="#ClickBtn" strokeWidth="2.0" visible="false" />
+            <Line fx:id="l9" accessibleText="l9" onMouseClicked="#ClickBtn" strokeWidth="2.0" visible="false" />
+            <Label fx:id="lbl" layoutX="12.0" layoutY="533.0" prefHeight="34.0" prefWidth="126.0" textFill="#c91010" />
+            <Label fx:id="lbl1" layoutX="172.0" layoutY="533.0" prefHeight="34.0" prefWidth="204.0" text="foyer" textFill="#c91010" />
+            <Line fx:id="Miroire" endX="390.0" endY="360.0" startX="390.0" startY="60.0" strokeWidth="3.0" visible="false" />
+           <Line fx:id="M1" endX="10.0" layoutX="382.0" layoutY="51.0" rotate="32.0" startX="-20.0" strokeWidth="2.0" visible="false" />
+           <Line fx:id="M2" endX="10.0" layoutX="382.0" layoutY="370.0" rotate="-32.0" startX="-20.0" strokeWidth="2.0" visible="false" />
+            <Line fx:id="R1" accessibleText="R" endX="261.0" endY="295.0" layoutX="10.0" layoutY="2.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" startX="261.0" startY="248.0" strokeWidth="5.0" visible="false" />
+            <Arc fx:id="arc4" accessibleText="arc" fill="#eb0808" layoutX="270.0" layoutY="227.0" length="40.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radiusX="25.0" radiusY="25.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" visible="false" />
+            <Label fx:id="lblFoyer" layoutX="512.0" layoutY="143.0" prefHeight="18.0" prefWidth="50.0" style="-fx-background-color: #DDD;" text="Foyer" textFill="#eb0000" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="lblObjet" layoutX="512.0" layoutY="97.0" prefHeight="18.0" prefWidth="50.0" style="-fx-background-color: #DDD;" text="Objet" textAlignment="CENTER" textFill="#ff0c0c" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.5" radius="2.125" width="0.0" />
+         </effect>
+    
+      </Pane>
+   </children>
+</GridPane>

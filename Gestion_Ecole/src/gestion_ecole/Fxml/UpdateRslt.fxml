@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_ecole.Java.Gui.UpdateRsltController">
+   <children>
+      <HBox prefHeight="402.0" prefWidth="772.0" spacing="10.0">
+         <children>
+            <VBox prefHeight="402.0" prefWidth="214.0" spacing="40.0">
+               <children>
+                  <JFXTextField fx:id="FirstnameF" focusColor="#00bcd4" labelFloat="true" prefHeight="30.0" prefWidth="194.0" promptText="Firstname" unFocusColor="#737373" />
+                  <JFXComboBox fx:id="SelectD" focusColor="#00bcd4" prefHeight="30.0" prefWidth="194.0" unFocusColor="#737373" />
+                  <HBox prefHeight="18.0" prefWidth="186.0">
+                     <children>
+                        <JFXRadioButton fx:id="FY" prefHeight="17.0" prefWidth="87.0" text="FirstYear">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Year" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="SY" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="87.0" text="SecendYear" toggleGroup="$Year" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="Show" buttonType="RAISED" prefHeight="40.0" prefWidth="194.0" ripplerFill="#ffffffb2" style="-fx-background-color: #00bcd4;" text="Show" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="10.0" top="80.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="402.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <children>
+                  <JFXListView fx:id="ListView" prefHeight="355.0" prefWidth="250.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXListView>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" layoutX="586.0" layoutY="10.0" prefHeight="402.0" prefWidth="157.0" spacing="40.0">
+               <children>
+                  <JFXTextField fx:id="DS1" focusColor="#00bcd4" labelFloat="true" promptText="DS 1" unFocusColor="#737373" />
+                  <JFXTextField fx:id="DS2" focusColor="#00bcd4" labelFloat="true" layoutX="20.0" layoutY="199.0" promptText="DS 2" unFocusColor="#737373" />
+                  <JFXTextField fx:id="EXAM" focusColor="#00bcd4" labelFloat="true" layoutX="20.0" layoutY="221.0" promptText="EXAM" unFocusColor="#737373" />
+                  <JFXTextField fx:id="RATT" focusColor="#00bcd4" labelFloat="true" layoutX="20.0" layoutY="244.0" promptText="RATT" unFocusColor="#737373" />
+                  <HBox prefHeight="29.0" prefWidth="137.0">
+                     <children>
+                        <JFXRadioButton fx:id="AAR" prefHeight="17.0" prefWidth="71.0" text="Avec AR">
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="ARF" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="SAR" layoutX="10.0" layoutY="10.0" text="Sans AR" toggleGroup="$ARF" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="Update" buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #00bcd4;" text="Update" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="60.0" right="-21.0" />
+                     </VBox.margin></JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="13.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

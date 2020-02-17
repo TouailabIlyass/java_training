@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uml.FXMLDocumentController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="imgview1" fitHeight="200.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="imgview2" fitHeight="199.0" fitWidth="299.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+         <image>
+            <Image url="@../images/1x.jpg" />
+         </image></ImageView>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="135.0" layoutX="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/c1.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="offcare1" layoutX="109.0" layoutY="43.0" onAction="#buttonClosePressed" prefHeight="39.0" prefWidth="83.0" ripplerFill="#6da8eb" />
+            <JFXButton fx:id="oncare1" layoutX="109.0" layoutY="126.0" onAction="#buttonOpenPressed" prefHeight="39.0" prefWidth="83.0" ripplerFill="#6da8eb" />
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="143.0" layoutX="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/c2.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="oncare2" buttonType="RAISED" layoutX="129.0" layoutY="125.0" onAction="#buttonOpenPressed" prefHeight="24.0" prefWidth="76.0" ripplerFill="#0850a1" />
+            <JFXButton fx:id="offcare2" layoutX="120.0" layoutY="50.0" onAction="#buttonClosePressed" prefHeight="32.0" prefWidth="94.0" ripplerFill="#084b97" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

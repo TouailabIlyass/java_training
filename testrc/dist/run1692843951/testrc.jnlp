@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="testrc.jnlp">
+  <information>
+    <title>testrc</title>
+    <vendor>drging</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/reactive-streams-1.0.2.jar" size="2097" download="eager" />
+    <jar href="lib/rxjava-2.2.4.jar" size="2330385" download="eager" />
+    <jar href="testrc.jar" size="3681" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="testrc" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="testrc.Testrc"  name="testrc" />
+  <update check="always"/>
+</jnlp>

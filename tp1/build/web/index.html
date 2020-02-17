@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h3>Atelier 3:</h3>
+        <h5>Gestion des etats - Suivi de session.</h5>
+        
+        
+        <h2>Online payment:</h2>
+        <form  method="POST" action="test" id="formlogin">
+                                
+                                <div class="form-group" id="errorLogin" >
+                                </div>
+                                <div class="form-group ">
+                                    <label for="fname" >First name</label>
+                                    <input id="fname" type="text" name="fname" class="form-control" placeholder="First name" required autofocus>  
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname"  >Last name</label>
+                                    <input type="text" class="form-control"  id="lname" name="lname"  placeholder="Last name" required>
+                                  </div>
+
+                               <div class="form-group">
+                                    <label for="amount"  >Amount to pay</label>
+                                    <input type="text" class="form-control"  id="amount" name="amount"  placeholder="Amount" required>
+                                 </div>
+            
+            
+            
+                               
+            
+            
+                                
+            
+            
+            <h2>Payment</h2>
+            <input type="radio" name="pay" value="Credit card"/><label>Credit card</label>
+            <input type="radio" name="pay" value="Debit card"/><label>Debit card</label>
+            <input type="radio" name="pay" value="Paypal"/><label>Paypal</label>
+            
+             <div class="form-group">
+              <label for="ncard"  >Name on card</label>
+              <input type="text" class="form-control"  id="ncard" name="ncard"  placeholder="Name on card" required>
+               </div>
+             <div class="form-group">
+              <label for="ccard"  >Credit card number</label>
+              <input type="text" class="form-control"  id="ccard" name="ccard"  placeholder="Credit card number" required>
+               </div>
+            
+            
+            <div class="form-group">
+              <label for="ecard"  >Expiration</label>
+              <input type="text" class="form-control"  id="ecard" name="ecard"  placeholder="Expiration" required>
+               </div>
+                      
+            <div class="form-group">
+              <label for="cvv"  >CVV</label>
+              <input type="text" class="form-control"  id="cvv" name="cvv"  placeholder="CVV" required>
+               </div>
+            
+            
+            
+            <div class="form-group text-center">
+                                    <button type="submit" name="cf" id="login" class="btn btn-primary">Continue to checkout</button>
+                                    
+                                                               
+                                </div>
+            
+            
+                            </form>
+        
+    </body>
+</html>

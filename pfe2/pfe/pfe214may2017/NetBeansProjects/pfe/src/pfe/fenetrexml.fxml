@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<GridPane fx:id="gridPane" maxHeight="2000.0" maxWidth="2000.0" minHeight="600.0" minWidth="600.0" onMouseMoved="#fen" prefHeight="600.0" prefWidth="800.0" styleClass="Test" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfe.Control">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" maxWidth="1000.0" minWidth="46.0" percentWidth="30.0" prefWidth="400.0" />
+    <ColumnConstraints hgrow="NEVER" maxWidth="2000.0" minWidth="10.0" percentWidth="90.0" prefWidth="783.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane fx:id="pan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #8B1A3F; -fx-border-width: 3px; -fx-border-radius: 5%;" styleClass="Test" stylesheets="@application.css" GridPane.columnIndex="1">
+         <children>
+           <Line fx:id="R" endX="261.0" endY="295.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" startX="261.0" startY="248.0" strokeWidth="5.0" />
+            <Line fx:id="axe" endX="590.0" endY="300.0" onMouseClicked="#ClickBtn" startX="10.0" startY="300.0" stroke="#3d0dae" strokeWidth="3.0" />
+            <Line fx:id="op" endX="300.0" endY="506.0" onMouseClicked="#ClickBtn" startX="300.0" startY="94.0" />
+            <Arc fx:id="arc2" fill="#030303" layoutX="301.0" layoutY="515.0" length="40.0" radiusX="25.0" radiusY="25.0" startAngle="74.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Circle fx:id="f2" fill="#fffe00" layoutX="314.0" layoutY="299.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="f1" fill="#fffe00" layoutX="285.0" layoutY="300.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="R2" endX="386.0" endY="375.0" startX="386.0" startY="300.0" stroke="RED" strokeWidth="5.0" />
+            <Arc fx:id="arc3" layoutX="385.0" layoutY="368.0" length="40.0" radiusX="25.0" radiusY="25.0" rotate="180.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+             <Arc fx:id="arc1" fill="#030303" layoutX="299.0" layoutY="80.0" length="40.0" radiusX="25.0" radiusY="25.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+             <Arc fx:id="arc" fill="#eb0808" layoutX="260.0" layoutY="226.0" length="40.0" onMouseClicked="#ClickBtn" onMouseDragged="#ClickDragged" onMouseEntered="#Hover" radiusX="25.0" radiusY="25.0" startAngle="-108.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.5" radius="2.125" width="0.0" />
+         </effect>
+    
+      </Pane>
+      <Pane fx:id="pan2" maxWidth="400.0" minWidth="200.0" prefWidth="200.0" stylesheets="@application.css">
+         <children>
+            <VBox layoutX="-5.0" layoutY="-1.0" prefHeight="608.0" prefWidth="207.0" style="-fx-padding: 10px;">
+               <children>
+                  <Accordion maxHeight="250.0" prefHeight="250.0">
+                    <panes>
+                      <TitledPane animated="false" maxHeight="200.0" minWidth="38.0" prefHeight="206.0" prefWidth="148.0" stylesheets="@application.css" text="Optique">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="104.0">
+                                 <children>
+                                    <RadioButton fx:id="radioOp1" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#ChangeRadio" prefHeight="17.0" prefWidth="154.0" selected="true" text="Optique Convergente">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="Optique" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="radioOp2" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#ChangeRadio" prefHeight="17.0" prefWidth="148.0" text="Optique Divergente" toggleGroup="$Optique" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" maxHeight="200.0" prefHeight="200.0" stylesheets="@application.css" text="Color">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@application.css">
+                                 <children>
+                                    <JFXColorPicker fx:id="color" editable="true" layoutX="30.0" layoutY="114.0" onAction="#ChangeColor" />
+                                    <JFXCheckBox fx:id="caxe" layoutX="14.0" layoutY="14.0" prefHeight="16.0" prefWidth="127.0" text="axe" unCheckedColor="#ee2929" />
+                                    <JFXCheckBox fx:id="coptique" layoutX="15.0" layoutY="46.0" prefHeight="16.0" prefWidth="127.0" text="optique" unCheckedColor="#ee2929" />
+                                    <JFXCheckBox fx:id="cfocal" layoutX="15.0" layoutY="78.0" prefHeight="16.0" prefWidth="127.0" text="focal" unCheckedColor="#ee2929" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Size">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="86.0" prefHeight="26.0" prefWidth="140.0" text="Height :" />
+                                    <Label layoutX="16.0" layoutY="11.0" prefHeight="25.0" prefWidth="140.0" text="Width : " />
+                                    <JFXSlider fx:id="slide1" layoutX="14.0" layoutY="54.0" max="2000.0" min="800.0" onMouseClicked="#ChangeSize" value="800.0" />
+                                    <JFXSlider fx:id="slide2" layoutX="16.0" layoutY="126.0" max="2000.0" min="600.0" onMouseClicked="#ChangeSize" value="600.0" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</GridPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="516.0" style="-fx-background-color: #aaa;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appstage.FXMLDocumentController">
+   <children>
+      <Pane fx:id="pan" layoutX="24.0" layoutY="25.0" prefHeight="331.0" prefWidth="471.0" style="-fx-background-color: #fff;">
+         <children>
+            <JFXTextField fx:id="user" focusColor="#dd0000" layoutX="161.0" layoutY="83.0" maxWidth="184.0" minWidth="184.0" prefHeight="45.0" prefWidth="184.0" promptText="Username" />
+            <JFXPasswordField fx:id="passwd" focusColor="#e40202" layoutX="161.0" layoutY="143.0" maxWidth="184.0" minWidth="170.0" prefHeight="45.0" prefWidth="184.0" promptText="Password" />
+            <JFXButton fx:id="suivant" buttonType="RAISED" layoutX="324.0" layoutY="235.0" onAction="#Conncet" prefHeight="37.0" prefWidth="80.0" ripplerFill="WHITE" style="-fx-background-color: #2196f3;" styleClass="hvbtn" text="Suivant" textFill="WHITE" />
+            <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="82.0" layoutY="235.0" onAction="#Cancel" prefHeight="37.0" prefWidth="72.0" ripplerFill="WHITE" style="-fx-background-color: #2196f3;" styleClass="hvbtn" text="Cancel" textFill="WHITE" />
+            <Label fx:id="lbl" layoutX="143.0" layoutY="281.0" prefHeight="29.0" prefWidth="261.0" textFill="#f24040" />
+            <ImageView fitHeight="104.0" fitWidth="130.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/ocp-groupe-squarelogo-1462861413176.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </Pane>
+   </children>
+</Pane>

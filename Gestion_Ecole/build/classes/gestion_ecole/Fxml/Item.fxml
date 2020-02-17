@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="item" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="324.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="Firstname" prefHeight="25.0" prefWidth="144.5" text="Label">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label fx:id="Lastname" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="144.5" text="Label">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="remove" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #00bcd4; -fx-background-radius: 50%;">
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets right="5.0" />
+   </padding>
+</HBox>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <Object class="line" id="R" couleur="0x212121ff" />
+  <Object class="line" id="R2" couleur="0x212121ff" />
+  <Object class="line" id="axe" couleur="0x3949abff" />
+  <Object class="line" id="op" couleur="0xf4511eff" />
+  <Object class="cercle" id="f1" couleur="0xffca28ff" />
+  <Object class="cercle" id="f2" couleur="0xffd54fff" />
+  <Object class="line" id="l" couleur="0xec407aff" />
+  <Object class="line" id="l3" couleur="0x1e88e5ff" />
+  <Object class="line" id="l4" couleur="0x062d6dff" />
+  <Object class="line" id="l5" couleur="0x689f38ff" />
+  <Object class="line" id="l7" couleur="0x212121ff" />
+  <Object class="line" id="l8" couleur="0xff6f00ff" />
+</root>

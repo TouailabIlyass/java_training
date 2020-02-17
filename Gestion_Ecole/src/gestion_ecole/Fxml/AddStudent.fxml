@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="772.0" style="-fx-background-radius: 4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_ecole.Java.Gui.AddStudentController">
+   <children>
+      <HBox fx:id="First" prefHeight="402.0" prefWidth="772.0">
+         <children>
+            <AnchorPane prefHeight="402.0" prefWidth="386.0">
+               <children>
+                  <JFXTextField fx:id="Firstname" focusColor="#00bcd4" labelFloat="true" layoutX="58.0" layoutY="60.0" prefHeight="30.0" prefWidth="270.0" promptText="Firstname" unFocusColor="#737373">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="Lastname" focusColor="#00bcd4" labelFloat="true" layoutX="58.0" layoutY="150.0" prefHeight="30.0" prefWidth="270.0" promptText="Lastname" unFocusColor="#737373">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="CIN" focusColor="#00bcd4" labelFloat="true" layoutX="58.0" layoutY="230.0" prefHeight="30.0" prefWidth="270.0" promptText="CIN" unFocusColor="#737373">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="402.0" prefWidth="386.0">
+               <children>
+                  <JFXTextField fx:id="BrithPlace" focusColor="#00bcd4" labelFloat="true" layoutX="58.0" layoutY="60.0" prefHeight="30.0" prefWidth="270.0" promptText="Brith Place" unFocusColor="#737373">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="BrithDate" defaultColor="#00bcd4" layoutX="58.0" layoutY="150.0" prefHeight="30.0" prefWidth="270.0" promptText="Brith Date" />
+                  <JFXTextField fx:id="CNE" focusColor="#00bcd4" labelFloat="true" layoutX="58.0" layoutY="230.0" prefHeight="30.0" prefWidth="270.0" promptText="CNE" unFocusColor="#737373">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="Next" buttonType="RAISED" layoutX="276.0" layoutY="361.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #00bcd4; -fx-background-radius: 4;" text="NEXT" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox fx:id="Last" layoutX="776.0" prefHeight="402.0" prefWidth="772.0">
+         <children>
+            <AnchorPane prefHeight="402.0" prefWidth="386.0">
+               <children>
+                  <JFXComboBox fx:id="SelectD" focusColor="#00bcd4" layoutX="58.0" layoutY="60.0" prefHeight="30.0" prefWidth="270.0" promptText="Select Departement" unFocusColor="#737373" />
+                  <JFXDatePicker fx:id="DateInc" defaultColor="#00bcd4" layoutX="58.0" layoutY="150.0" prefHeight="30.0" prefWidth="270.0" promptText="Date Of Registration" />
+                  <JFXRadioButton fx:id="FY" layoutX="58.0" layoutY="230.0" prefHeight="20.0" prefWidth="89.0" selected="true" styleClass="custom-jfx-radio-button-blue" text="First Year">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="SelectAn" />
+                     </toggleGroup>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="SY" layoutX="212.0" layoutY="230.0" styleClass="custom-jfx-radio-button-blue" text="Scende Year" toggleGroup="$SelectAn">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="402.0" prefWidth="386.0">
+               <children>
+                  <JFXTextField fx:id="Email" focusColor="#00bcd4" labelFloat="true" layoutX="58.0" layoutY="60.0" prefHeight="30.0" prefWidth="270.0" promptText="Email" unFocusColor="#737373">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="Phone" focusColor="#00bcd4" labelFloat="true" layoutX="58.0" layoutY="150.0" prefHeight="30.0" prefWidth="270.0" promptText="Phone" unFocusColor="#737373">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="Back" buttonType="RAISED" layoutX="164.0" layoutY="361.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 4;" text="BACK" />
+                  <JFXButton fx:id="Add" buttonType="RAISED" layoutX="274.6" layoutY="361.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #00bcd4; -fx-background-radius: 4;" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jade2.FXMLDocumentController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="-4.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../jade/road01.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="377.0" layoutY="383.0" prefHeight="214.0" prefWidth="223.0" style="-fx-background-color: #fff;" />
+            <Pane layoutX="377.0" prefHeight="214.0" prefWidth="223.0" style="-fx-background-color: #fff;" />
+            <Pane prefHeight="214.0" prefWidth="215.0" style="-fx-background-color: #fff;" />
+            <Pane layoutY="385.0" prefHeight="214.0" prefWidth="215.0" style="-fx-background-color: #fff;">
+               <children>
+                  <ImageView fx:id="feux1" accessibleText="vert" fitHeight="35.0" fitWidth="33.0" layoutX="174.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../jade/green.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <ImageView fx:id="car1" fitHeight="33.0" fitWidth="95.0" layoutX="20.0" layoutY="315.0" onMouseEntered="#test2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../jade/yellow-car.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="car2" fitHeight="33.0" fitWidth="82.0" layoutX="220.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../jade/blue-car.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="feux2" accessibleText="rouge" fitHeight="35.0" fitWidth="33.0" layoutX="175.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../jade/red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="feux3" accessibleText="vert" fitHeight="35.0" fitWidth="33.0" layoutX="387.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../jade/green.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="feux4" accessibleText="rouge" fitHeight="35.0" fitWidth="33.0" layoutX="387.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../jade/red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="car3" fitHeight="33.0" fitWidth="95.0" layoutX="520.0" layoutY="240.0" onMouseEntered="#test2" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../jade/blank.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="car4" fitHeight="33.0" fitWidth="82.0" layoutX="305.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../jade/SimpleBlueCarTopView.png" />
+               </image>
+            </ImageView>
+            <Circle fill="DODGERBLUE" layoutX="292.0" layoutY="300.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+         </children></Pane>
+   </children>
+</GridPane>

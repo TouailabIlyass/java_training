@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_ecole.Java.Gui.ShowResultController">
+   <children>
+      <HBox prefHeight="402.0" prefWidth="772.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="402.0" prefWidth="214.0" spacing="40.0">
+               <children>
+                  <JFXTextField fx:id="FirstnameF" focusColor="#00bcd4" labelFloat="true" prefHeight="30.0" prefWidth="194.0" promptText="Firstname" unFocusColor="#737373" />
+                  <JFXComboBox fx:id="SelectD" focusColor="#00bcd4" prefHeight="30.0" prefWidth="194.0" unFocusColor="#737373" />
+                  <HBox prefHeight="18.0" prefWidth="186.0">
+                     <children>
+                        <JFXRadioButton fx:id="FY" prefHeight="17.0" prefWidth="87.0" styleClass="custom-jfx-radio-button-blue" text="FirstYear">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Year" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="SY" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="87.0" styleClass="custom-jfx-radio-button-blue" text="SecendYear" toggleGroup="$Year" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="Show" buttonType="RAISED" prefHeight="40.0" prefWidth="194.0" ripplerFill="#ffffffb2" style="-fx-background-color: #00bcd4;" text="Show" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="80.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="402.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <children>
+                  <JFXListView fx:id="ListView" prefHeight="355.0" prefWidth="250.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXListView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" layoutX="286.0" layoutY="10.0" prefHeight="402.0" prefWidth="89.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="65.0" text="DS 1" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="168.0" layoutY="197.0" prefHeight="28.0" prefWidth="65.0" text="DS 2" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="168.0" layoutY="211.0" prefHeight="28.0" prefWidth="65.0" text="EXAM" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="168.0" layoutY="225.0" prefHeight="28.0" prefWidth="65.0" text="RATT" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="34.0" layoutY="269.0" prefHeight="28.0" prefWidth="65.0" text="AR" textFill="#737373">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="586.0" layoutY="10.0" prefHeight="402.0" prefWidth="89.0" spacing="20.0">
+               <children>
+                  <Label fx:id="DS_1" prefHeight="28.0" prefWidth="65.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DS_2" layoutX="168.0" layoutY="197.0" prefHeight="28.0" prefWidth="65.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="EXAM" layoutX="168.0" layoutY="211.0" prefHeight="28.0" prefWidth="65.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RATT" layoutX="168.0" layoutY="225.0" prefHeight="28.0" prefWidth="65.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="AR" layoutX="10.0" layoutY="269.0" prefHeight="28.0" prefWidth="65.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

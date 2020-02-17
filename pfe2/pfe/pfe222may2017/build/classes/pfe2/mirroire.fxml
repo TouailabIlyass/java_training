@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <QuadCurve controlX="-37.0" controlY="-91.0" endX="50.0" fill="WHITE" layoutX="580.0" layoutY="211.0" rotate="90.0" startX="-136.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="190.0" layoutX="359.0" layoutY="173.0" rotate="90.0" startX="-100.0" strokeWidth="3.0" />
+      <Line endX="10.0" layoutX="361.0" layoutY="67.0" rotate="32.0" startX="-20.0" strokeWidth="2.0" />
+      <Line endX="10.0" layoutX="360.0" layoutY="279.0" rotate="-32.0" startX="-20.0" strokeWidth="2.0" />
+   </children>
+</Pane>
